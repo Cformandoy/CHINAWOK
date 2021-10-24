@@ -1,0 +1,11 @@
+JOIN DE users y rol->
+
+SELECT users.username,users.email, rol.rol FROM users
+INNER JOIN rol ON users.rol_user=rol.idrol
+ORDER BY rol.rol;
+
+Cambiar rol de users
+
+UPDATE `users` SET `rol_user`='1 O 2' WHERE `email`='CORREO DEL USUARIO'
+
+http://localhost/chinawok
