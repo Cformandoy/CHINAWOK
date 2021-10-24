@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ChinaWok</string>
+
+    <string name="txt_Bienvenido">...</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fullname">Fullname</string>
+    <string name="email">Email</string>
+    <string name="login_here">Login here</string>
+    <string name="sign_up_here">Sign Up Here</string>
+
+
+    <string name="CallCenter">Call Center: 600 570 0331</string>
+    <string name="title_activity_navegation_drawer">NavegationDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="forgot_password">¿Forgot Password?</string>
+    <string name="send_email">send email</string>
+    <string name="configuraciones">Configuraciones</string>
+    <string name="new_password">New Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="verificar">Verificar</string>
+    <string name="user">User</string>
+</resources>

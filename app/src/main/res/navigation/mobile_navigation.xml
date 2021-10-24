@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.chinawok.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_banquetesFragment"
+            app:destination="@id/banquetesFragment"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_promocionesFragment"
+            app:destination="@id/promocionesFragment"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_wokIndividualFragment"
+            app:destination="@id/wokIndividualFragment"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/banquetesFragment"
+        android:name="com.example.chinawok.Fragments.Banquetes.BanquetesFragment"
+        android:label="banquetes_fragment"
+        tools:layout="@layout/banquetes_fragment" />
+    <fragment
+        android:id="@+id/promocionesFragment"
+        android:name="com.example.chinawok.Fragments.Promociones.PromocionesFragment"
+        android:label="promociones_fragment"
+        tools:layout="@layout/promociones_fragment" />
+    <fragment
+        android:id="@+id/wokIndividualFragment"
+        android:name="com.example.chinawok.Fragments.WokIndividual.WokIndividualFragment"
+        android:label="wok_individual_fragment"
+        tools:layout="@layout/wok_individual_fragment" />
+    <fragment
+        android:id="@+id/nav_config"
+        android:name="com.example.chinawok.ui.config.ConfigFragment"
+        android:label="fragment_config"
+        tools:layout="@layout/fragment_config" />
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.chinawok.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
