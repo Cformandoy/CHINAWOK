@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                             data[0] = username;
                             data[1] = password;
 
-                            PutData putData = new PutData("http://192.168.101.9/chinawok/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://8.tcp.ngrok.io:16840/chinawok/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 

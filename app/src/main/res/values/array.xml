@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Regiones">
+        <item>Metropolitana</item>
+        <item>Tarapaca</item>
+        <item>Antofagasta</item>
+        <item>Atacama</item>
+        <item>Coquimbo</item>
+        <item>Valparaiso</item>
+        <item>OHiggins</item>
+        <item>BioBio</item>
+        <item>Los Lagos</item>
+        <item>Magallanes y Antartica</item>
+        <item>Los Rios</item>
+        <item>Arica y Parinacota</item>
+    </string-array>
+
+    <string-array name="Metropolitana">
+        <item>Mall Plaza Norte</item>
+        <item>Mall Parque Arauco</item>
+        <item>Mall Costanera Center</item>
+        <item>Eusebio Lillo</item>
+        <item>Mall VivoCentro</item>
+        <item>Mall Vespucio</item>
+        <item>Mall Alameda</item>
+        <item>Mall Sur</item>
+        <item>Paseo Arauco Estacion</item>
+        <item>Mall Arauco Maipu</item>
+        <item>Mall Oeste</item>
+        <item>Mall Tobalaba</item>
+    </string-array>
+
+    <string-array name="Tarapaca">
+        <item>Mall Plaza 1</item>
+        <item>Mall Parque 2</item>
+
+    </string-array>
+
+    <string-array name="Antofagasta">
+        <item>Mall Plaza 3</item>
+        <item>Mall Parque 4</item>
+
+    </string-array>
+
+    <string-array name="Atacama">
+        <item>Mall Plaza 5</item>
+        <item>Mall Parque 6</item>
+
+    </string-array>
+
+    <string-array name="Coquimbo">
+        <item>Mall Plaza 7</item>
+        <item>Mall Parque 8</item>
+
+    </string-array>
+
+
+
+</resources>

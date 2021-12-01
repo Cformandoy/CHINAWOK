@@ -32,4 +32,21 @@
     <string name="confirm_new_password">Confirm New Password</string>
     <string name="verificar">Verificar</string>
     <string name="user">User</string>
+    <string name="ubicaciones">Ubicaciones</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="politicas">Politicas</string>
+    <string name="pagina_web">Pagina Web</string>
+    <string name="ver_locales">Ver Locales</string>
+    <string name="selecciona_una_region">Selecciona una Region</string>
+    <string name="locales_disponibles">Locales Disponibles</string>
+    <string name="buscar">Buscar</string>
+    <string name="lector_de_qr">Lector de QR</string>
+    <string name="leer">Leer</string>
+    <string name="Resultado">Aqui se mostrara el resultado</string>
+    <string name="ir_a_la_web">ir a la web</string>
+    <string name="leer_codigo_qr">Leer codigo QR</string>
+    <string name="buscar_en_la_web">Buscar en la Web</string>
+    <string name="aqui_se_muestra_el_qr_leido">Aqui se muestra el QR leido</string>
+    <string name="lector_qr">Lector QR</string>
 </resources>

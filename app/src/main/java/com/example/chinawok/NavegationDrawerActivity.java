@@ -1,13 +1,9 @@
 package com.example.chinawok;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
-import android.widget.TextView;
 
-import com.example.chinawok.ui.home.HomeFragment;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -18,11 +14,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.chinawok.databinding.ActivityNavegationDrawerBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 public class NavegationDrawerActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityNavegationDrawerBinding binding;
+    public String codigoQR;
 //    Bundle dato;
 
 
@@ -40,14 +38,18 @@ public class NavegationDrawerActivity extends AppCompatActivity {
         mostrardato.setText(datoobtenido);*/
 
         setSupportActionBar(binding.appBarNavegationDrawer.toolbar1);
-        binding.appBarNavegationDrawer.fab.setOnClickListener(new View.OnClickListener() {
 
+
+
+
+        binding.appBarNavegationDrawer.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Aquí Habrá un Bot", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Aquí habrá un bot", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
+
 
 
 
@@ -56,7 +58,7 @@ public class NavegationDrawerActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_config, R.id.nav_slideshow, R.id.banquetesFragment, R.id.promocionesFragment, R.id.wokIndividualFragment)
+                R.id.nav_home,R.id.nav_paginaweb , R.id.nav_qr,R.id.nav_config, R.id.nav_slideshow, R.id.nav_map, R.id.banquetesFragment, R.id.promocionesFragment, R.id.wokIndividualFragment)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_navegation_drawer);

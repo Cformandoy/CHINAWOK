@@ -49,4 +49,24 @@
         android:name="com.example.chinawok.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.chinawok.ui.Maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/nav_paginaweb"
+        android:name="com.example.chinawok.ui.PaginaWeb.PaginaWeb"
+        android:label="pagina_web_fragment"
+        tools:layout="@layout/pagina_web_fragment" />
+    <fragment
+        android:id="@+id/nav_locales"
+        android:name="com.example.chinawok.ui.Locales.Ver_Locales"
+        android:label="ver__usuarios_fragment"
+        tools:layout="@layout/ver_locales_fragment" />
+    <fragment
+        android:id="@+id/nav_qr"
+        android:name="com.example.chinawok.ui.Qr.LeerQr"
+        android:label="leer_qr_fragment"
+        tools:layout="@layout/leer_qr_fragment" />
 </navigation>

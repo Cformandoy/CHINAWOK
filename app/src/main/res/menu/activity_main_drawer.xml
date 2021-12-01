@@ -8,15 +8,41 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_home"
             android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/ubicaciones" />
+
+        <item
+            android:id="@+id/nav_locales"
+            android:icon="@drawable/ic_baseline_storefront_24"
+            android:title="@string/ver_locales" />
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_paginaweb"-->
+<!--            android:icon="@drawable/ic_web"-->
+<!--            android:title="@string/pagina_web" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_slideshow"-->
+<!--            android:icon="@drawable/ic_menu_slideshow"-->
+<!--            android:title="@string/menu_slideshow" />-->
+
+
+
+        <item
+            android:id="@+id/nav_qr"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="@string/lector_de_qr" />
 
         <item
             android:id="@+id/nav_config"
             android:icon="@drawable/ic_config"
             android:title="@string/configuraciones" />
 
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+
+
+
     </group>
 </menu>
