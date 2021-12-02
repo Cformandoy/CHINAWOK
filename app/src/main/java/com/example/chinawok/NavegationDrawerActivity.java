@@ -3,6 +3,8 @@ package com.example.chinawok;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -16,30 +18,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.chinawok.databinding.ActivityNavegationDrawerBinding;
 import com.google.android.material.snackbar.Snackbar;
 
+import org.w3c.dom.Text;
+
 public class NavegationDrawerActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityNavegationDrawerBinding binding;
-    public String codigoQR;
-//    Bundle dato;
+    public TextView txv;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         binding = ActivityNavegationDrawerBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        /*dato = getIntent().getExtras();
-        String datoobtenido = dato.getString("pasardato");
-        TextView mostrardato = (TextView) findViewById(R.id.subtitle);
-        mostrardato.setText(datoobtenido);*/
-
         setSupportActionBar(binding.appBarNavegationDrawer.toolbar1);
-
-
 
 
         binding.appBarNavegationDrawer.fab.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +45,6 @@ public class NavegationDrawerActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
 
 
 
@@ -64,6 +59,18 @@ public class NavegationDrawerActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_navegation_drawer);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+
+
+        Bundle miBundle = this.getIntent().getExtras();
+
+        if (miBundle!= null){
+
+            String user = miBundle.getString("user");
+            Toast.makeText(NavegationDrawerActivity.this, "Bienvenid@ : "+user, Toast.LENGTH_LONG).show();
+
+        }
     }
 
     @Override

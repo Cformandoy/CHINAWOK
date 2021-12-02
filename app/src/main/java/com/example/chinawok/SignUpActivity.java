@@ -73,7 +73,7 @@ public class SignUpActivity extends AppCompatActivity {
                             data[1] = username;
                             data[2] = password;
                             data[3] = email;
-                            PutData putData = new PutData("http://8.tcp.ngrok.io:16840/chinawok/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://4.tcp.ngrok.io:19050/chinawok/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();

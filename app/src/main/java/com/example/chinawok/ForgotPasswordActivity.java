@@ -68,7 +68,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                             data[0] = email;
                             data[1] = username;
 
-                            PutData putData = new PutData("http://8.tcp.ngrok.io:16840/chinawok/forgotpassword.php", "POST", field, data);
+                            PutData putData = new PutData("http://4.tcp.ngrok.io:19050/chinawok/forgotpassword.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 

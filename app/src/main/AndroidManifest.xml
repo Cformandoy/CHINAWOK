@@ -23,7 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChinaWok"
         android:hardwareAccelerated="true"
-
+        android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         tools:replace="android:usesCleartextTraffic"
 

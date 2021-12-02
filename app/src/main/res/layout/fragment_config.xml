@@ -28,13 +28,21 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="111dp"
-            app:srcCompat="@drawable/ic_user"
-
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_user_black"
             />
 
-        <Space
+        <TextView
+            android:id="@+id/tvConfig"
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
 
     </LinearLayout>
 

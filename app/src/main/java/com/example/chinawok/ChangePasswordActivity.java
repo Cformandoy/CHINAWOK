@@ -67,7 +67,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                             data[0] = newpassword;
                             data[1] = email;
 //                            PutData putData = new PutData("http://192.168.101.4/chinawok/changepassword.php", "POST", field, data);
-                            PutData putData = new PutData("http://8.tcp.ngrok.io:16840/chinawok/changepassword.php", "POST", field, data);
+                            PutData putData = new PutData("http://4.tcp.ngrok.io:19050/chinawok/changepassword.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();

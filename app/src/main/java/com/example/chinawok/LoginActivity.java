@@ -49,9 +49,6 @@ public class LoginActivity extends AppCompatActivity {
                 username = String.valueOf(txtUsername.getText());
                 password = String.valueOf(txtPassword.getText());
 
-//                Intent dardato = new Intent(LoginActivity.this, NavegationDrawerActivity.class);
-//                dardato.putExtra("pasardato", "nombre");
-
                 if (!username.equals("") && !password.equals("")){
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler(Looper.getMainLooper());
@@ -70,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                             data[0] = username;
                             data[1] = password;
 
-                            PutData putData = new PutData("http://8.tcp.ngrok.io:16840/chinawok/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://4.tcp.ngrok.io:19050/chinawok/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 
@@ -78,7 +75,11 @@ public class LoginActivity extends AppCompatActivity {
 
                                     String result = putData.getResult();
                                     if (result.equals("Login Success")){
-                                        Intent intent = new Intent(getApplicationContext(), NavegationDrawerActivity.class);
+                                        Intent intent = new Intent(LoginActivity.this, NavegationDrawerActivity.class);
+
+                                        Bundle miBundle = new Bundle();
+                                        miBundle.putString("user",username);
+                                        intent.putExtras(miBundle);
                                         startActivity(intent);
                                         finish();
                                     }
